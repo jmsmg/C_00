@@ -1,18 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_is_print_comb.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: seonggch <seonggch@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/13 12:47:00 by seonggch          #+#    #+#             */
-/*   Updated: 2021/10/13 12:47:47 by seonggch         ###   ########.fr       */
+/*   Created: 2021/10/13 12:59:50 by seonggch          #+#    #+#             */
+/*   Updated: 2021/10/13 13:05:55 by seonggch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_is_negative(int n);
+#include <unistd.h>
 
-int main()
+void ft_print_comb(void)
 {
-	ft_is_negative(int n);
 }

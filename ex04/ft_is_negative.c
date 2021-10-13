@@ -6,7 +6,7 @@
 /*   By: seonggch <seonggch@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 12:41:05 by seonggch          #+#    #+#             */
-/*   Updated: 2021/10/13 12:52:57 by seonggch         ###   ########.fr       */
+/*   Updated: 2021/10/13 13:12:25 by seonggch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@ void	ft_is_negative(int n)
 {	
 	if (n >= 0)
 	{
-		n = 'P';
+		n = (char) 'P';
 		write(1, &n, 1);
 	}
 	else
 	{
-		n = 'N';
+		n = (char)'N';
 		write(1, &n, 1);
 	}
 }
