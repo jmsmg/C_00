@@ -6,7 +6,7 @@
 /*   By: seonggch <seonggch@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 18:29:40 by seonggch          #+#    #+#             */
-/*   Updated: 2021/10/12 18:31:08 by seonggch         ###   ########.fr       */
+/*   Updated: 2021/10/16 11:03:10 by seonggch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_print_alphabet(void)
 {
-	char a;
+	char	a;
 
 	a = 'a';
 	while (a <= 'z')
