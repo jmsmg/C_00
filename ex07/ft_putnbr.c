@@ -6,7 +6,7 @@
 /*   By: seonggch <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/17 20:15:07 by seonggch          #+#    #+#             */
-/*   Updated: 2021/10/17 20:20:53 by seonggch         ###   ########.fr       */
+/*   Updated: 2021/10/17 20:23:49 by seonggch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ void	ft_putnbr(int nb)
 	}
 	else
 	{
-		ft_putnbr(nb + 48)
+		ft_puutchar(nb + 48);
 	}
 }
