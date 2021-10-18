@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: seonggch <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: seonggch <seonggch@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/17 20:15:07 by seonggch          #+#    #+#             */
-/*   Updated: 2021/10/17 20:31:34 by seonggch         ###   ########.fr       */
+/*   Created: 2021/10/18 14:51:43 by seonggch          #+#    #+#             */
+/*   Updated: 2021/10/18 15:01:26 by seonggch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,16 @@ void	ft_putchar(char c)
 
 void	ft_putnbr(int nb)
 {
-	if (nb > 9)
+	if (nb < 0)
+	{
+		nb = -nb;
+		ft_putchar('-');
+	}
+	if (nb < 10)
+		ft_putchar(nb + 48);
+	else
 	{
 		ft_putnbr(nb / 10);
 		ft_putnbr(nb % 10);
-	}
-	else
-	{
-		ft_putchar(nb + 48);
 	}
 }
