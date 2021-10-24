@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_print_combn.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: seonggch <seonggch@student.42seoul.>       +#+  +:+       +#+        */
+/*   By: seonggch <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/18 14:51:43 by seonggch          #+#    #+#             */
-/*   Updated: 2021/10/18 15:01:26 by seonggch         ###   ########.fr       */
+/*   Created: 2021/10/24 22:25:27 by seonggch          #+#    #+#             */
+/*   Updated: 2021/10/24 22:45:05 by seonggch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,19 +16,17 @@ void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
-
-void	ft_putnbr(int nb)
+void	ft_print_combn(int n)
 {
-	if (nb < 0)
+	char array[2];
+
+	array[0] = 0;
+	while (array[0] <= 99)
 	{
-		nb = -nb;
-		ft_putchar('-');
-	}
-	if (nb < 10)
-		ft_putchar(nb + 48);
-	else
-	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
+		array[1] = array[0] + 1;
+		while (b <= 99)
+		{
+			f
+		}
 	}
 }
