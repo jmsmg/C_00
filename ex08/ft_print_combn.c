@@ -6,7 +6,7 @@
 /*   By: seonggch <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 22:25:27 by seonggch          #+#    #+#             */
-/*   Updated: 2021/10/25 01:42:29 by seonggch         ###   ########.fr       */
+/*   Updated: 2021/10/25 01:44:22 by seonggch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putchar(char c)
 
 void	ft_print_combn(int n)
 {
-	char array[2];
+	char	array[2];
 
 	array[0] = '0';
 	while (array[0] <= 99)
