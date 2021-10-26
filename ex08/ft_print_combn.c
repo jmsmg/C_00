@@ -6,7 +6,7 @@
 /*   By: seonggch <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 22:25:27 by seonggch          #+#    #+#             */
-/*   Updated: 2021/10/25 01:44:22 by seonggch         ###   ########.fr       */
+/*   Updated: 2021/10/27 00:15:38 by seonggch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putchar(char c)
 
 void	ft_putout(int nb, int *array, int pos)
 {
-	int i;
+	int	i;
 
 	if (pos == 1)
 	{
@@ -36,8 +36,8 @@ void	ft_putout(int nb, int *array, int pos)
 
 void	ft_inc(int nb, int *array)
 {
-	int i;
-	int max;
+	int	i;
+	int	max;
 
 	i = nb - 1;
 	max = 9;
@@ -56,8 +56,8 @@ void	ft_inc(int nb, int *array)
 
 void	ft_print_combn(int nb)
 {
-	int array[10];
-	int i;
+	int	array[10];
+	int	i;
 
 	i = 0;
 	while (i < nb)
