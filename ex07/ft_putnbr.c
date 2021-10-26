@@ -43,7 +43,7 @@ void	ft_putnbr(int nb)
 	{
 		ft_rec(nb);
 	}
-	else if
+	else if (nb == -2147483648)
 	{
 		write(1, "-2147483648", 11);
 	}

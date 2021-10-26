@@ -17,28 +17,65 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_print_combn(int n)
+void	ft_putout(int nb, int *array, int pos)
 {
-	char	array[2];
+	int i;
 
-	array[0] = '0';
-	while (array[0] <= 99)
+	if (pos == 1)
 	{
-		array[1] = array[0] + 1;
-		while (array[1] <= 99)
+		ft_putchar(',');
+		ft_putchar(' ');
+	}
+	i = 0;
+	while (i < nb)
+	{
+		ft_putchar(array[i] + '0');
+		i++;
+	}
+}
+
+void	ft_inc(int nb, int *array)
+{
+	int i;
+	int max;
+
+	i = nb - 1;
+	max = 9;
+	while (array[i] == max)
+	{
+		i -= 1;
+		max -= 1;
+	}
+	array[i] += 1;
+	while (i < nb)
+	{
+		array[i + 1] = array[i] + 1;
+		i += 1;
+	}
+}
+
+void	ft_print_combn(int nb)
+{
+	int array[10];
+	int i;
+
+	i = 0;
+	while (i < nb)
+	{
+		array[i] = i;
+		i++;
+	}
+	ft_putout(nb, array, 0);
+	while (array[0] != 10 - nb || array[nb - 1] != 9)
+	{
+		if (array[nb - 1] != 9)
 		{
-			ft_putchar(48 + array[0] / 10);
-			ft_putchar(48 + array[0] % 10);
-			ft_putchar(' ');
-			ft_putchar(48 + array[1] / 10);
-			ft_putchar(48 + array[1] % 10);
-			if (array[0] + array[1] != 98 + 99)
-			{
-				ft_putchar(',');
-				ft_putchar(' ');
-			}
-			array[1]++;
+			array[nb - 1] += 1;
 		}
-		array[0]++;
+		else
+		{
+			ft_inc(nb, array);
+		}
+		ft_putout(nb, array, 1);
 	}
 }
