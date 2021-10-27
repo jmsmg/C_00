@@ -6,7 +6,7 @@
 /*   By: seonggch <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 22:25:27 by seonggch          #+#    #+#             */
-/*   Updated: 2021/10/27 00:15:38 by seonggch         ###   ########.fr       */
+/*   Updated: 2021/10/27 10:39:58 by seonggch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_putout(int nb, int *array, int pos)
+void	ft_putout(int nb, int *array, int isspace)
 {
 	int	i;
 
-	if (pos == 1)
+	if (isspace == 1)
 	{
 		ft_putchar(',');
 		ft_putchar(' ');
